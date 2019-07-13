@@ -1,0 +1,19 @@
+<section class="features-icons bg-light text-center">
+  <div class="container">
+    <div class="row">
+      <% @recipes.each do |recipe| %>
+        <div class="col-lg-4">
+          <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+            <div class="features-icons-icon d-flex">
+              <i class="icon-screen-desktop m-auto text-primary"></i>
+            </div>
+            <%= link_to recipes_path(recipe), class: "list-group-item" do %>
+              <h3><small> <%= recipe.title %></small></h3>
+              <%= image_tag recipe.photo.url %>
+            <% end %>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</section>
