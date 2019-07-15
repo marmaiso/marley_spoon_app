@@ -1,24 +1,13 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The following app was built using the following guide:
 
-Things you may want to cover:
+  https://www.contentful.com/developers/docs/ruby/tutorials/create-your-own-rails-app/
 
-* Ruby version
+It is not deployed, but it can be easily deployed in Heroku.
 
-* System dependencies
+To start the server locally run:
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+  ```
+  SPACE_ID='kk2bw5ojx476' ACCESS_TOKEN='7ac531648a1b5e1dab6c18b0979f822a5aad0fe5f1109829b8a197eb2be4b84c' rails s
+  ```
