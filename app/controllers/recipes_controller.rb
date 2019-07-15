@@ -4,5 +4,6 @@ class RecipesController < ApplicationController
   end
 
   def show
+    @recipe = Recipe.new(params[:id]).render
   end
 end

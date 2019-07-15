@@ -7,7 +7,7 @@
             <div class="features-icons-icon d-flex">
               <i class="icon-screen-desktop m-auto text-primary"></i>
             </div>
-            <%= link_to recipes_path(recipe), class: "list-group-item" do %>
+            <%= link_to recipe_path(id: recipe.id), class: "list-group-item" do %>
               <h3><small> <%= recipe.title %></small></h3>
               <%= image_tag recipe.photo.url %>
             <% end %>

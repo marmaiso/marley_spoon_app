@@ -15,10 +15,11 @@ module ContentfulRenderable
   module ClassMethods
     def client
       @client ||= Contentful::Client.new(
-        access_token: access_token,
-        space: space_id,
+        access_token: Base.access_token,
+        space: Base.space_id,
         dynamic_entries: :auto,
-        raise_errors: true
+        raise_errors: true,
+        raise_for_empty_fields: false
       )
     end
 

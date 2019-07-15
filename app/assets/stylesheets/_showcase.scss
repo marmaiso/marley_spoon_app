@@ -1,0 +1,19 @@
+.showcase {
+  margin-top: 2rem;
+  .showcase-text {
+    padding: 3rem;
+    &label-tag {
+      font-size: 1.5rem !important;
+    }
+  }
+  .showcase-img {
+    min-height: 30rem;
+    background-size: cover;
+    margin-top: 9rem;
+  }
+  @media (min-width: 768px) {
+    .showcase-text {
+      padding: 7rem;
+    }
+  }
+}
